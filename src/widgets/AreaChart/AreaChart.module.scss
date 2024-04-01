@@ -1,0 +1,18 @@
+.container {
+  width: 1000px;
+  height: 600px;
+  padding-inline: 20px;
+  border-radius: 30px;
+  background-color: $bg_modal;
+}
+
+.wrapper-links {
+  display: flex;
+  margin-inline: 20px;
+  margin-bottom: 15px;
+}
+
+.links {
+  text-align: center;
+  color: $cyan-text;
+}
