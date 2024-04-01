@@ -1,5 +1,5 @@
 import { ScrollArea, Table } from '@mantine/core'
-import { FC, ReactElement, useState } from 'react'
+import { FC, ReactElement } from 'react'
 import styles from './TableCustom.module.scss'
 
 type TTableProps = {
@@ -8,11 +8,8 @@ type TTableProps = {
 }
 
 export const TableCustom: FC<TTableProps> = ({ rows, columns }) => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [scrolled, setScrolled] = useState(false)
-
   return (
-    <ScrollArea h={300} onScrollPositionChange={({ y }) => setScrolled(y !== 0)}>
+    <ScrollArea h={300}>
       <Table
         withRowBorders={false}
         highlightOnHover
